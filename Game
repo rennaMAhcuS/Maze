@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+cd "/Users/emsr/Projects&Competitions/CS108_Project/Maze/"
+
+mkdir -p GameData
+touch GameData/path.txt
+if [ -f "GameData/LeastTimes.txt" ]; then;
+else
+  echo 15 >> GameData/LeastTimes.txt
+  echo 40 >> GameData/LeastTimes.txt
+  echo 120 >> GameData/LeastTimes.txt
+fi
+
+
+python game.py > /dev/null
