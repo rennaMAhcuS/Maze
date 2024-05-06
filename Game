@@ -10,5 +10,4 @@ else
   echo 120 >> GameData/LeastTimes.txt
 fi
 
-
-python game.py > /dev/null
+~/anaconda3/bin/python game.py > /dev/null
