@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-cd "/Users/emsr/Projects&Competitions/CS108_Project/Maze/"
+cd "~/Projects&Competitions/CS108_Project/Maze/"
 
 mkdir -p GameData
 touch GameData/path.txt
