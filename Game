@@ -1,13 +1,18 @@
 #!/usr/bin/env zsh
-cd "~/Projects&Competitions/CS108_Project/Maze/"
 
+source ~/.zshrc
+
+cd ~/"Projects&Competitions"/CS108_Project/Maze/
 mkdir -p GameData
+
 touch GameData/path.txt
-if [ -f "GameData/LeastTimes.txt" ]; then;
-else
-  echo 15 >> GameData/LeastTimes.txt
-  echo 40 >> GameData/LeastTimes.txt
-  echo 120 >> GameData/LeastTimes.txt
+
+if [ ! -f "GameData/LeastTimes.txt" ]; then
+  {
+    echo 15
+    echo 40
+    echo 120
+  } >> "GameData/LeastTimes.txt"
 fi
 
-~/anaconda3/bin/python game.py > /dev/null
+python game.py > /dev/null
