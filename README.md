@@ -107,7 +107,7 @@ Note: To ensure easy navigation between various screens, a back button is introd
 
 The game starts with an Intro Screen:
 
-![Intro Screen](Intro)
+![Intro Screen](./LaTeXReport/Intro.png)
 
 #### Main Menu
 
@@ -120,13 +120,13 @@ After loading, you will be greeted with a Main Menu, from which you can choose t
 
 You can select any of these by pressing on these buttons:
 
-![Main Menu](MainMenu)
+![Main Menu](./LaTeXReport/MainMenu.png)
 
 #### Game Level Selection
 
-We have 3 levels of mazes, you can choose any one:
+We have three levels of mazes from which you can choose:
 
-![Game Level Selection](GameLevel)
+![Game Level Selection](./LaTeXReport/GameLevel.png)
 
 #### The Game!
 
@@ -136,29 +136,29 @@ Various themes can be changed using the *Change Theme* button. The music can be 
 
 Some examples of the game screens:
 
-![Game Starts!](MazeGame)
+![Game Starts!](./LaTeXReport/MazeGame.png)
 
-![Game Play](MazeGameThemes)
+![Game Play](./LaTeXReport/MazeGameThemes.png)
 
 #### Game Over
 
 On reaching the opposite end, the game ends, and the time taken is displayed:
 
-![Game Over](GameOver)
+![Game Over](./LaTeXReport/GameOver.png)
 
 #### Fastest Solves
 
 On clicking the Fastest Solves button on the Main Menu, you will see the Least Time taken to solve the various levels of the maze. An example screen:
 
-![Fastest Solves](HighScores)
+![Fastest Solves](./LaTeXReport/HighScores.png)
 
 #### Preferences
 
 This window enables you to mute the music part of the game. You can do this by clicking on the red music button. If you want the music back on, click the button again.
 
-![Music On](PreferencesSoundOn)
+![Music On](./LaTeXReport/PreferencesSoundOn.png)
 
-![Music Off](PreferencesSoundOff)
+![Music Off](./LaTeXReport/PreferencesSoundOff.png)
 
 #### Quit
 
@@ -170,7 +170,12 @@ On clicking this button, the game ends and the program terminates.
 
 For the maze generation, I used the *Recursive Backtracking* algorithm. This algorithm is a randomized version of the depth-first search algorithm. The algorithm starts at a random cell and chooses a random neighbouring cell that has not been visited, creates a path between the two cells, and moves to the neighbouring cell. The algorithm continues until it has visited every cell in the grid. I have modified this algorithm slightly to make the wall size and the path size the same, which makes the maze look more appealing.
 
-For the pathfinding, I used the *A* algorithm. The *A* algorithm is a pathfinding algorithm that uses a heuristic to determine the next node to visit in a graph. The algorithm uses a priority queue to determine the next node to visit based on the cost of the path to that node and the heuristic value of the node. The algorithm continues until it reaches the goal node or there are no more nodes to visit. I have used the `heapq` module to implement the priority queue for the A* algorithm.
+For the pathfinding, I used the A\* algorithm.
+The A\* algorithm is a pathfinding algorithm that uses a heuristic to determine the next node to visit in a graph.
+The algorithm uses a priority queue to determine the next node to visit based on the cost of the path to that node and
+the heuristic value of the node.
+The algorithm continues until it reaches the goal node or there are no more nodes to visit.
+I have used the `heapq` module to implement the priority queue for the A* algorithm.
 
 For the pygame functions, I referred to the official documentation of pygame and pygame-ce, mostly the latter for the updated functions and methods.
 
@@ -178,7 +183,7 @@ For the pygame functions, I referred to the official documentation of pygame and
 
 ### Customisations in the Game
 
-A list of all the special customisations implemented in the game:
+A list of all the special customizations implemented in the game:
 
 - Animation when the player moves.
 - Dynamic Background of the Main Menu.
