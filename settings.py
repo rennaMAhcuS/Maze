@@ -107,7 +107,7 @@ QuitPos = (WINDOW_DIM[0] / 2, 650)
 GameplayMusicAddress = "media/sounds/GameplayMusic.wav"
 PlayerName = "MrStark"  # Default Name
 
-SolutionPathFileAddress = "GameData/path.txt"
+SolutionPathFileAddress = "data/path.txt"
 
 TimeButtonImage = LoadScaledImage("media/images/Buttons/MainMenuButton.png",
                                   scaling_dim=(int(((WINDOW_DIM[0] - WINDOW_DIM[1]) / 2) * 1.5), int(75 * 1.5)))
@@ -123,7 +123,7 @@ HighScoreButtonPos = (WINDOW_DIM[0] / 2, WINDOW_DIM[1] / 2 + 75)
 
 # Scores
 #    High Scores CSV File Address
-HighScoresCSV_Address = "GameData/LeastTimes.txt"
+HighScoresCSV_Address = "data/LeastTimes.txt"
 
 
 ''' PyGame Variables '''

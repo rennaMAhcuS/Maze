@@ -61,7 +61,7 @@ The project directory is as follows:
 │   ├── images
 │   ├── sounds
 │   └── videos
-├── GameData
+├── data
 │   ├── path.txt
 │   └── LeastTimes.txt
 ├── game.py
@@ -72,7 +72,7 @@ The project directory is as follows:
 - **settings.py** - Contains all the global variables and modules necessary for the game to function smoothly.
 - **Modules** - The programs that manage various game parts.
 - **media** - Contains all the images, sounds, and fonts used in the game.
-- **GameData** - Contains the path of the maze and the High ScoreCard (Least Time Taken).
+- **data** - Contains the path of the maze and the High ScoreCard (Least Time Taken).
 
 ---
 
