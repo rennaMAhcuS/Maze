@@ -1,6 +1,6 @@
 # Maze in `python` using `pygame`
 
-## Evuri Mohana Sreedhara Reddy 
+## Evuri Mohana Sreedhara Reddy
 
 ### CS-108 Project - Spring 2023-24
 
@@ -18,10 +18,10 @@ This report outlines the development process of the game "Lost in the Maze: A PY
 2. [Modules](#modules)
 3. [Directory Structure](#directory-structure)
 4. [Running Instructions](#running-instructions)
-    1. [Prerequisites](#prerequisites)
-    2. [Game Navigation and Gameplay](#game-navigation-and-gameplay)
+   1. [Prerequisites](#prerequisites)
+   2. [Game Navigation and Gameplay](#game-navigation-and-gameplay)
 5. [Various Implementations in the Code](#various-implementations-in-the-code)
-    1. [Customisations in the Game](#customisations-in-the-game)
+   1. [Customizations in the Game](#customisations-in-the-game)
 6. [References](#references)
 
 ---
@@ -80,7 +80,7 @@ The project directory is as follows:
 
 ### Prerequisites
 
-Note: It is assumed that Python is already installed. The file can be run by using one of the following commands:
+Note: It is assumed that Python is already installed. The file can be run by using one of the following commands (depending on your system's configuration):
 
 ```sh
 python game.py > /dev/null
@@ -92,7 +92,7 @@ python3 game.py > /dev/null
 
 If the project is opened in PyCharm, a run configuration named Game should be shown, where the program can be run by running that config.
 
-Ensure that `pygame-ce` and only `pygame-ce` is installed, not the traditional pygame. If you have the traditional pygame installed, run:
+Ensure that `pygame-ce` and only `pygame-ce` is installed, not the traditional pygame. If you have the conventional pygame installed, run the following:
 
 ```sh
 pip uninstall pygame
@@ -115,7 +115,7 @@ After loading, you will be greeted with a Main Menu, from which you can choose t
 
 - Play
 - See the Fastest Solves in each Level
-- Customise the Game: Mute or Unmute
+- Customize the Game: Mute or Unmute
 - Quit
 
 You can select any of these by pressing on these buttons:
@@ -130,7 +130,7 @@ We have three levels of mazes from which you can choose:
 
 #### The Game!
 
-The game starts, waiting for you to give the input of navigation using the arrow keys or [W A S D]. You aim to go to the diagonally opposite corner, which has another door waiting for you to open it. The *Score* is measured in terms of the time taken to reach the opposite end: the Lower, the Better!
+The game starts, waiting for you to navigate using the arrow keys or [W A S D]. The goal is to reach the door in the opposite corner. The *Score* is measured in terms of the time taken to go to the opposite end: the Lower, the Better!
 
 Various themes can be changed using the *Change Theme* button. The music can be turned off by pressing the Music button.
 
@@ -168,7 +168,7 @@ On clicking this button, the game ends and the program terminates.
 
 ## Various Implementations in the Code
 
-For the maze generation, I used the *Recursive Backtracking* algorithm. This algorithm is a randomized version of the depth-first search algorithm. The algorithm starts at a random cell and chooses a random neighbouring cell that has not been visited, creates a path between the two cells, and moves to the neighbouring cell. The algorithm continues until it has visited every cell in the grid. I have modified this algorithm slightly to make the wall size and the path size the same, which makes the maze look more appealing.
+For the maze generation, I used the *Recursive Backtracking* algorithm. This algorithm is a randomized version of the depth-first search algorithm. The algorithm starts at a random cell, chooses a random neighboring cell that has not been visited, creates a path between the two cells, and moves to the next cell. The algorithm continues until it has visited every cell in the grid. I have modified this algorithm slightly to make the wall size and the path size the same, which makes the maze look more appealing.
 
 For the pathfinding, I used the A\* algorithm.
 The A\* algorithm is a pathfinding algorithm that uses a heuristic to determine the next node to visit in a graph.
@@ -181,7 +181,7 @@ For the pygame functions, I referred to the official documentation of pygame and
 
 ---
 
-### Customisations in the Game
+### Customizations in the Game
 
 A list of all the special customizations implemented in the game:
 
@@ -192,16 +192,16 @@ A list of all the special customizations implemented in the game:
 - High Scores.
 - Preferences.
 - Back Button for easy navigation.
-- Customised Fonts.
+- Customized Fonts.
 - Responsive Buttons.
 
 ---
 
 ## References
 
-1. Pygame Official Documentation: [https://www.pygame.org/docs/](https://www.pygame.org/docs/)
-2. Pygame CE Official Documentation: [https://pyga.me/docs/](https://pyga.me/docs/)
-3. Maze Generation Algorithms: [https://professor-l.github.io/mazes/](https://professor-l.github.io/mazes/)
-4. A* Algorithm: [https://drive.google.com/file/d/1xpJgkuL_uoBCnpOEdHTKjrQACCLgT7Gc/view?usp=sharing](https://drive.google.com/file/d/1xpJgkuL_uoBCnpOEdHTKjrQACCLgT7Gc/view?usp=sharing)
+1. [Pygame Official Documentation](https://www.pygame.org/docs/)
+2. [Pygame CE Official Documentation](https://pyga.me/docs/)
+3. [Maze Generation Algorithms by `professor-l`](https://professor-l.github.io/mazes/)
+4. [A* Algorithm]()
 
 ---
