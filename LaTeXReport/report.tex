@@ -10,8 +10,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    citeclolor=blue,
-    urlcolor=magenta,
+    urlcolor=blue,
 }
 
 
@@ -83,7 +82,7 @@
         \item \textbf{game.py} - The main game loop.
         \item \textbf{settings.py} - Has all the global variables and modules necessary for the game to function smoothly.
         \item \textbf{Modules} - The programs which manage various parts of the game.
-        \item \textbf{media} - Contains all the images, sounds, and fonts used in the game.
+        \item \textbf{media} - Contain all the images, sounds, and fonts used in the game.
         \item \textbf{data} - Contains the path of the maze and the High-Score Card (Least Time Taken).
     \end{itemize}
 
@@ -96,7 +95,7 @@
     \texttt{python game.py > /dev/null} \\
     \texttt{python3 game.py > /dev/null} \\
     If the project is opened in pycharm, a run configuration named Game should be shown, where the program can be run by running that config.\\
-    Ensure that \texttt{pygame-ce} and only \texttt{pygame-ce} is only installed, not the traditional pygame.
+    Ensure that \texttt{pygame-ce} and only \texttt{pygame-ce} are only installed, not the traditional pygame.
     If you have the traditional pygame installed, run: \\
     \texttt{pip uninstall pygame} \\
     \texttt{pip install pygame-ce}
@@ -128,7 +127,7 @@
     \end{figure}
 
     \subsubsection{Game Level Selection}
-    We have 3 levels of mazes, we can choose any one[\ref{fig:GameLevel}].
+    We have 3 levels of mazes, we can choose anyone[\ref{fig:GameLevel}].
     \begin{figure}[h!]
         \centering
         \includegraphics[width=0.5\textwidth]{GameLevel}
@@ -152,7 +151,7 @@
     \begin{figure}[h!]
         \centering
         \includegraphics[width=0.5\textwidth]{MazeGameThemes}
-        \caption{Game Starts!}\label{fig:GamePlay}
+        \caption{ Game Starts!}\label{fig:GamePlay}
     \end{figure}
 
     \subsubsection{Game Over}
@@ -196,7 +195,7 @@
     \section{Various Implementations in the code}\label{sec:my-project-journey-and-various-implementations-in-the-code}
     For the maze generation, I used the \emph{Recursive Backtracking} algorithm.
     This algorithm is a randomized version of the depth-first search algorithm.
-    The algorithm starts at a random cell and chooses a random neighbouring cell that has not been visited, creates a path between the two cells, and moves to the neighbouring cell.
+    The algorithm starts at a random cell and chooses a random neighboring cell that has not been visited, creates a path between the two cells, and moves to the neighboring cell.
     The algorithm continues until it has visited every cell in the grid.
     I have modified this algorithm slightly to make the wall size and the path size the same, which makes the maze look more appealing.
     \cite{MazeGeneration}\\
@@ -208,18 +207,18 @@
     \cite{MazeSolver}
     For the pygame functions, I referred to the official documentation of pygame\cite{pygameDoc} and pygame\cite{pygameCEDoc}, mostly the latter for the updated functions and methods.\\
 
-    \subsection{Customisations in the Game}\label{subsec:customisations-in-the-game}
-    A list of all the special customisations implemented in the game:
+    \subsection{Customization in the Game}\label{subsec:customisations-in-the-game}
+    A list of all the special customization implemented in the game:
     \begin{itemize}
         \item Animation when the player moves.
         \item Dynamic Background of the Main Menu.
         \item Music and Sound Effects.
         \item Themes for the Game.
-        \item Music and Sound Effects.
+        \item Music and Sound.
         \item High Scores.
         \item Preferences.
         \item Back Button for easy navigation.
-        \item Customised Fonts.
+        \item Customized Fonts.
         \item Responsive Buttons.
     \end{itemize}
 
@@ -227,20 +226,20 @@
 
     \begin{thebibliography}{9}
         \bibitem{pygameDoc}
-        \textit{Pygame Official Documentation\ }
+        Pygame Official Documentation\
         \url{https://www.pygame.org/docs/}.
 
         \bibitem{pygameCEDoc}
-        \textit{Pygame CE Official Documentation\ }
+        Pygame CE Official Documentation\
         \url{https://pyga.me/docs/}.
 
         \bibitem{MazeGeneration}
-        \textit{Maze Generation Algorithms\ }
+        Maze Generation Algorithms (by professor-l)\
         \url{https://professor-l.github.io/mazes/}.
 
         \bibitem{MazeSolver}
-        \textit{A* Algorithm\ }
-        \url{https://drive.google.com/file/d/1xpJgkuL_uoBCnpOEdHTKjrQACCLgT7Gc/view?usp=sharing}
+        A* Algorithm\
+        \url{https://github.com/rennaMAhcuS/Maze/blob/main/OtherResources/A*.md}
 
     \end{thebibliography}
 

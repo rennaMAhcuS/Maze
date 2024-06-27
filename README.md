@@ -21,7 +21,7 @@ This report outlines the development process of the game "Lost in the Maze: A PY
    1. [Prerequisites](#prerequisites)
    2. [Game Navigation and Gameplay](#game-navigation-and-gameplay)
 5. [Various Implementations in the Code](#various-implementations-in-the-code)
-   1. [Customizations in the Game](#customisations-in-the-game)
+   1. [Customizations in the Game](#customizations-in-the-game)
 6. [References](#references)
 
 ---
@@ -170,11 +170,8 @@ On clicking this button, the game ends and the program terminates.
 
 For the maze generation, I used the *Recursive Backtracking* algorithm. This algorithm is a randomized version of the depth-first search algorithm. The algorithm starts at a random cell, chooses a random neighboring cell that has not been visited, creates a path between the two cells, and moves to the next cell. The algorithm continues until it has visited every cell in the grid. I have modified this algorithm slightly to make the wall size and the path size the same, which makes the maze look more appealing.
 
-For the pathfinding, I used the A\* algorithm.
-The A\* algorithm is a pathfinding algorithm that uses a heuristic to determine the next node to visit in a graph.
-The algorithm uses a priority queue to determine the next node to visit based on the cost of the path to that node and
-the heuristic value of the node.
-The algorithm continues until it reaches the goal node or there are no more nodes to visit.
+For the pathfinding, I used the A\* algorithm. The A\* algorithm is a pathfinding algorithm that uses a heuristic to determine the next node to visit in a graph. The algorithm uses a priority queue to determine the next node to visit based on the cost of the path to that node and the heuristic value of the node. The algorithm continues until it reaches the goal node or there are no more nodes to visit.
+
 I have used the `heapq` module to implement the priority queue for the A* algorithm.
 
 For the pygame functions, I referred to the official documentation of pygame and pygame-ce, mostly the latter for the updated functions and methods.
@@ -185,9 +182,9 @@ For the pygame functions, I referred to the official documentation of pygame and
 
 A list of all the special customizations implemented in the game:
 
-- Animation when the player moves.
+- Animation is when the player moves.
 - Dynamic Background of the Main Menu.
-- Music and Sound Effects.
+- Music and Sound.
 - Themes for the Game.
 - High Scores.
 - Preferences.
@@ -202,6 +199,6 @@ A list of all the special customizations implemented in the game:
 1. [Pygame Official Documentation](https://www.pygame.org/docs/)
 2. [Pygame CE Official Documentation](https://pyga.me/docs/)
 3. [Maze Generation Algorithms by `professor-l`](https://professor-l.github.io/mazes/)
-4. [A* Algorithm]()
+4. [A* Algorithm](OtherResources/A*.md)
 
 ---
