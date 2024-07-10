@@ -106,7 +106,7 @@ Note: To ensure easy navigation between various screens, a back button is introd
 
 The game starts with an Intro Screen:
 
-![Intro Screen](LaTeXReport/Intro.png)
+![Intro Screen](/LaTeXReport/Intro.png)
 
 #### Main Menu
 
@@ -119,13 +119,13 @@ After loading, you will be greeted with a Main Menu, from which you can choose t
 
 You can select any of these by pressing on these buttons:
 
-![Main Menu](LaTeXReport/MainMenu.png)
+![Main Menu](/LaTeXReport/MainMenu.png)
 
 #### Game Level Selection
 
 We have three levels of mazes from which you can choose:
 
-![Game Level Selection](LaTeXReport/GameLevel.png)
+![Game Level Selection](/LaTeXReport/GameLevel.png)
 
 #### The Game!
 
@@ -135,29 +135,29 @@ Various themes can be changed using the *Change Theme* button. The music can be 
 
 Some examples of the game screens:
 
-![Game Starts!](LaTeXReport/MazeGame.png)
+![Game Starts!](/LaTeXReport/MazeGame.png)
 
-![Game Play](LaTeXReport/MazeGameThemes.png)
+![Game Play](/LaTeXReport/MazeGameThemes.png)
 
 #### Game Over
 
 On reaching the opposite end, the game ends, and the time taken is displayed:
 
-![Game Over](LaTeXReport/GameOver.png)
+![Game Over](/LaTeXReport/GameOver.png)
 
 #### Fastest Solves
 
 On clicking the Fastest Solves button on the Main Menu, you will see the Least Time taken to solve the various levels of the maze. An example screen:
 
-![Fastest Solves](LaTeXReport/HighScores.png)
+![Fastest Solves](/LaTeXReport/HighScores.png)
 
 #### Preferences
 
 This window enables you to mute the music part of the game. You can do this by clicking on the red music button. If you want the music back on, click the button again.
 
-![Music On](LaTeXReport/PreferencesSoundOn.png)
+![Music On](/LaTeXReport/PreferencesSoundOn.png)
 
-![Music Off](LaTeXReport/PreferencesSoundOff.png)
+![Music Off](/LaTeXReport/PreferencesSoundOff.png)
 
 #### Quit
 
@@ -200,12 +200,7 @@ A list of all the special customizations implemented in the game:
 
 ---
 
-[^1] [Pygame Official Documentation](https://www.pygame.org/docs/)
-
-[^2] [Pygame CE Official Documentation](https://pyga.me/docs/)
-
-[^3] [Maze Generation Algorithms by `professor-l`](https://professor-l.github.io/mazes/)
-
-[^4][A* Algorithm](OtherResources/A*.md)
-
----
+[^1]: [Pygame Official Documentation](https://www.pygame.org/docs/)
+[^2]: [Pygame CE Official Documentation](https://pyga.me/docs/)
+[^3]: [Maze Generation Algorithms by `professor-l`](https://professor-l.github.io/mazes/)
+[^4]: [A* Algorithm](OtherResources/A*.md)
