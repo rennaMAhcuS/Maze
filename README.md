@@ -22,6 +22,7 @@ This report outlines the development process of the game "Lost in the Maze: A PY
    2. [Game Navigation and Gameplay](#game-navigation-and-gameplay)
 5. [Various Implementations in the Code](#various-implementations-in-the-code)
    1. [Customizations in the Game](#customizations-in-the-game)
+6. [References](#references)
 
 ---
 
@@ -106,7 +107,7 @@ Note: To ensure easy navigation between various screens, a back button is introd
 
 The game starts with an Intro Screen:
 
-![Intro Screen](/LaTeXReport/Intro.png)
+![Intro Screen](./LaTeXReport/Intro.png)
 
 #### Main Menu
 
@@ -119,13 +120,13 @@ After loading, you will be greeted with a Main Menu, from which you can choose t
 
 You can select any of these by pressing on these buttons:
 
-![Main Menu](/LaTeXReport/MainMenu.png)
+![Main Menu](./LaTeXReport/MainMenu.png)
 
 #### Game Level Selection
 
 We have three levels of mazes from which you can choose:
 
-![Game Level Selection](/LaTeXReport/GameLevel.png)
+![Game Level Selection](./LaTeXReport/GameLevel.png)
 
 #### The Game!
 
@@ -135,29 +136,29 @@ Various themes can be changed using the *Change Theme* button. The music can be 
 
 Some examples of the game screens:
 
-![Game Starts!](/LaTeXReport/MazeGame.png)
+![Game Starts!](./LaTeXReport/MazeGame.png)
 
-![Game Play](/LaTeXReport/MazeGameThemes.png)
+![Game Play](./LaTeXReport/MazeGameThemes.png)
 
 #### Game Over
 
 On reaching the opposite end, the game ends, and the time taken is displayed:
 
-![Game Over](/LaTeXReport/GameOver.png)
+![Game Over](./LaTeXReport/GameOver.png)
 
 #### Fastest Solves
 
 On clicking the Fastest Solves button on the Main Menu, you will see the Least Time taken to solve the various levels of the maze. An example screen:
 
-![Fastest Solves](/LaTeXReport/HighScores.png)
+![Fastest Solves](./LaTeXReport/HighScores.png)
 
 #### Preferences
 
 This window enables you to mute the music part of the game. You can do this by clicking on the red music button. If you want the music back on, click the button again.
 
-![Music On](/LaTeXReport/PreferencesSoundOn.png)
+![Music On](./LaTeXReport/PreferencesSoundOn.png)
 
-![Music Off](/LaTeXReport/PreferencesSoundOff.png)
+![Music Off](./LaTeXReport/PreferencesSoundOff.png)
 
 #### Quit
 
@@ -167,20 +168,13 @@ On clicking this button, the game ends and the program terminates.
 
 ## Various Implementations in the Code
 
-For the maze generation, I used the *Recursive Backtracking* algorithm.
-This algorithm is a randomized version of the depth-first search algorithm.
-The algorithm starts at a random cell, chooses a random neighboring cell that has not been visited,
-creates a path between the two cells, and moves to the next cell.
-The algorithm continues until it has visited every cell in the grid.
-I have modified this algorithm slightly to make the wall size and the path size the same,
-which makes the maze look more appealing.[^3]
+For the maze generation, I used the *Recursive Backtracking* algorithm. This algorithm is a randomized version of the depth-first search algorithm. The algorithm starts at a random cell, chooses a random neighboring cell that has not been visited, creates a path between the two cells, and moves to the next cell. The algorithm continues until it has visited every cell in the grid. I have modified this algorithm slightly to make the wall size and the path size the same, which makes the maze look more appealing.
 
 For the pathfinding, I used the A\* algorithm. The A\* algorithm is a pathfinding algorithm that uses a heuristic to determine the next node to visit in a graph. The algorithm uses a priority queue to determine the next node to visit based on the cost of the path to that node and the heuristic value of the node. The algorithm continues until it reaches the goal node or there are no more nodes to visit.
 
-I have used the `heapq` module to implement the priority queue for the A* algorithm[^4].
+I have used the `heapq` module to implement the priority queue for the A* algorithm.
 
-For the pygame functions, I referred to the official documentation of pygame[^1] and pygame-ce[^2],
-mostly the latter for the updated functions and methods.
+For the pygame functions, I referred to the official documentation of pygame and pygame-ce, mostly the latter for the updated functions and methods.
 
 ---
 
@@ -200,7 +194,11 @@ A list of all the special customizations implemented in the game:
 
 ---
 
-[^1]: [Pygame Official Documentation](https://www.pygame.org/docs/)
-[^2]: [Pygame CE Official Documentation](https://pyga.me/docs/)
-[^3]: [Maze Generation Algorithms by `professor-l`](https://professor-l.github.io/mazes/)
-[^4]: [A* Algorithm](OtherResources/A*.md)
+## References
+
+1. [Pygame Official Documentation](https://www.pygame.org/docs/)
+2. [Pygame CE Official Documentation](https://pyga.me/docs/)
+3. [Maze Generation Algorithms by `professor-l`](https://professor-l.github.io/mazes/)
+4. [A* Algorithm](OtherResources/A*.md)
+
+---
