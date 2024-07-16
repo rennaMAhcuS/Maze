@@ -1,0 +1,15 @@
+*.mp4
+
+**/__pycache__/
+
+.DS_Store
+
+LaTeXReport/*
+!LaTeXReport/report.pdf
+!LaTeXReport/*.png
+!LaTeXReport/*.tex
+
+OtherResources/*
+!OtherResources/A*.md
+
+Game
