@@ -68,11 +68,11 @@ The project directory is as follows:
 └── settings.py
 ```
 
-- **game.py** - The main game loop.
-- **settings.py** - Contains all the global variables and modules necessary for the game to function smoothly.
-- **Modules** - The programs that manage various game parts.
-- **media** - Contains all the images, sounds, and fonts used in the game.
-- **data** - Contains the path of the maze and the High ScoreCard (Least Time Taken).
+- **`game.py`** - The main game loop.
+- **`settings.py`** - Contains all the global variables and modules necessary for the game to function smoothly.
+- **`Modules`** - The programs that manage various game parts.
+- **`media`** - Contains all the images, sounds, and fonts used in the game.
+- **`data`** - Contains the path of the maze and the High ScoreCard (Least Time Taken).
 
 ---
 
@@ -83,11 +83,11 @@ The project directory is as follows:
 Note: It is assumed that Python is already installed. The file can be run by using one of the following commands (depending on your system's configuration):
 
 ```sh
-python game.py > /dev/null
+python game.py
 ```
 
 ```sh
-python3 game.py > /dev/null
+python3 game.py
 ```
 
 If the project is opened in PyCharm, a run configuration named Game should be shown, where the program can be run by running that config.

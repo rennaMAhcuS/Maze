@@ -13,6 +13,14 @@ import Modules.Preferences as Preferences
 # Suppress stderr
 sys.stderr = open(os.devnull, 'w')
 
+# Ensuring that the required files exist
+os.makedirs('data', exist_ok=True)
+with open('data/path.txt', 'a'):
+    pass
+if not os.path.isfile('data/LeastTimes.txt'):
+    with open('data/LeastTimes.txt', 'w') as f:
+        f.write("1000\n1000\n1000")
+
 # Initializing Pygame
 pygame.init()
 pygame.mixer.init()

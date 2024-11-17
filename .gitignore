@@ -9,7 +9,6 @@ LaTeXReport/*
 !LaTeXReport/*.png
 !LaTeXReport/*.tex
 
-OtherResources/*
-!OtherResources/A*.md
+OtherResources/media
 
 Game
