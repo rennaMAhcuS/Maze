@@ -1,13 +1,8 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
 
-if [ -n "$1" ]; then
-    PROJECT_DIR="$1"
-else
-    echo "No project directory provided. Exiting."
-    exit 1
-fi
+PROJECT_DIR="$(dirname "$0")"
 
-cd "$PROJECT_DIR" || exit
+cd $PROJECT_DIR || exit
 
 # Activate the virtual environment
 source "$PROJECT_DIR/venv/bin/activate"
