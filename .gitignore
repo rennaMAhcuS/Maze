@@ -1,6 +1,9 @@
 .DS_Store
 **/__pycache__/
 
+# venv directory
+venv
+
 OtherResources/media
 
 *.mp4
