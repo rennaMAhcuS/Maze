@@ -28,7 +28,7 @@ This report outlines the development process of the game "Lost in the Maze: A PY
 
 ## Introduction to my Game
 
-This game aims to complete the mazes generated as quickly as possible. The high scores equivalent - *Least Time Taken* are also based on this.
+This game aims to complete the mazes generated as quickly as possible. The high scores equivalent - _Least Time Taken_ are also based on this.
 
 ---
 
@@ -41,7 +41,7 @@ The external modules used are:
 - `Sys` - A module that provides access to some variables used or maintained by the interpreter and functions that interact with the interpreter.
 - `Time` - A module that provides various time-related functions.
 - `os` - A module that provides a portable way of using operating system-dependent functionality.
-- `heapq` - A module that implements heap queues. I used this module to implement the priority queue for the A* algorithm.
+- `heapq` - A module that implements heap queues. I used this module to implement the priority queue for the A\* algorithm.
 
 ---
 
@@ -80,23 +80,21 @@ The project directory is as follows:
 
 ### Prerequisites
 
-Note: It is assumed that Python is already installed. The file can be run by using one of the following commands (depending on your system's configuration):
-
-```sh
-python game.py
-```
-
-```sh
-python3 game.py
-```
-
-If the project is opened in PyCharm, a run configuration named Game should be shown, where the program can be run by running that config.
+Note: It is assumed that Python is already installed.
 
 Ensure that `pygame-ce` and only `pygame-ce` is installed, not the traditional pygame. If you have the conventional pygame installed, run the following:
 
 ```sh
 pip uninstall pygame
 pip install pygame-ce
+```
+
+If you are using venv, the additional required packages are in the dependencies.txt file.
+
+To run the game, use the Maze executable.
+
+```sh
+./Maze
 ```
 
 ### Game Navigation and Gameplay
@@ -107,7 +105,7 @@ Note: To ensure easy navigation between various screens, a back button is introd
 
 The game starts with an Intro Screen:
 
-![Intro Screen](./LaTeXReport/Intro.png)
+![Intro Screen](report/Intro.png)
 
 #### Main Menu
 
@@ -120,45 +118,45 @@ After loading, you will be greeted with a Main Menu, from which you can choose t
 
 You can select any of these by pressing on these buttons:
 
-![Main Menu](./LaTeXReport/MainMenu.png)
+![Main Menu](report/MainMenu.png)
 
 #### Game Level Selection
 
 We have three levels of mazes from which you can choose:
 
-![Game Level Selection](./LaTeXReport/GameLevel.png)
+![Game Level Selection](report/GameLevel.png)
 
 #### The Game!
 
-The game starts, waiting for you to navigate using the arrow keys or [W A S D]. The goal is to reach the door in the opposite corner. The *Score* is measured in terms of the time taken to go to the opposite end: the Lower, the Better!
+The game starts, waiting for you to navigate using the arrow keys or [W A S D]. The goal is to reach the door in the opposite corner. The _Score_ is measured in terms of the time taken to go to the opposite end: the Lower, the Better!
 
-Various themes can be changed using the *Change Theme* button. The music can be turned off by pressing the Music button.
+Various themes can be changed using the _Change Theme_ button. The music can be turned off by pressing the Music button.
 
 Some examples of the game screens:
 
-![Game Starts!](./LaTeXReport/MazeGame.png)
+![Game Starts!](report/MazeGame.png)
 
-![Game Play](./LaTeXReport/MazeGameThemes.png)
+![Game Play](report/MazeGameThemes.png)
 
 #### Game Over
 
 On reaching the opposite end, the game ends, and the time taken is displayed:
 
-![Game Over](./LaTeXReport/GameOver.png)
+![Game Over](report/GameOver.png)
 
 #### Fastest Solves
 
 On clicking the Fastest Solves button on the Main Menu, you will see the Least Time taken to solve the various levels of the maze. An example screen:
 
-![Fastest Solves](./LaTeXReport/HighScores.png)
+![Fastest Solves](report/HighScores.png)
 
 #### Preferences
 
 This window enables you to mute the music part of the game. You can do this by clicking on the red music button. If you want the music back on, click the button again.
 
-![Music On](./LaTeXReport/PreferencesSoundOn.png)
+![Music On](report/PreferencesSoundOn.png)
 
-![Music Off](./LaTeXReport/PreferencesSoundOff.png)
+![Music Off](report/PreferencesSoundOff.png)
 
 #### Quit
 
@@ -168,11 +166,11 @@ On clicking this button, the game ends and the program terminates.
 
 ## Various Implementations in the Code
 
-For the maze generation, I used the *Recursive Backtracking* algorithm. This algorithm is a randomized version of the depth-first search algorithm. The algorithm starts at a random cell, chooses a random neighboring cell that has not been visited, creates a path between the two cells, and moves to the next cell. The algorithm continues until it has visited every cell in the grid. I have modified this algorithm slightly to make the wall size and the path size the same, which makes the maze look more appealing.
+For the maze generation, I used the _Recursive Backtracking_ algorithm. This algorithm is a randomized version of the depth-first search algorithm. The algorithm starts at a random cell, chooses a random neighboring cell that has not been visited, creates a path between the two cells, and moves to the next cell. The algorithm continues until it has visited every cell in the grid. I have modified this algorithm slightly to make the wall size and the path size the same, which makes the maze look more appealing.
 
 For the pathfinding, I used the A\* algorithm. The A\* algorithm is a pathfinding algorithm that uses a heuristic to determine the next node to visit in a graph. The algorithm uses a priority queue to determine the next node to visit based on the cost of the path to that node and the heuristic value of the node. The algorithm continues until it reaches the goal node or there are no more nodes to visit.
 
-I have used the `heapq` module to implement the priority queue for the A* algorithm.
+I have used the `heapq` module to implement the priority queue for the A\* algorithm.
 
 For the pygame functions, I referred to the official documentation of pygame and pygame-ce, mostly the latter for the updated functions and methods.
 
@@ -199,6 +197,6 @@ A list of all the special customizations implemented in the game:
 1. [Pygame Official Documentation](https://www.pygame.org/docs/)
 2. [Pygame CE Official Documentation](https://pyga.me/docs/)
 3. [Maze Generation Algorithms by `professor-l`](https://professor-l.github.io/mazes/)
-4. [A* Algorithm](OtherResources/A*.md)
+4. [A\* Algorithm](OtherResources/A*.md)
 
 ---

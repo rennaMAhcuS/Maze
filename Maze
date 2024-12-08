@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+MAZE_DIR="$(dirname $(realpath "$0"))"
+
+cd "$MAZE_DIR" || exit
+
+# Activate the virtual environment
+source "$MAZE_DIR/venv/bin/activate" || exit
+
+# Run the game script
+python game.py
