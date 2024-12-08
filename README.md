@@ -82,14 +82,12 @@ The project directory is as follows:
 
 Note: It is assumed that Python is already installed.
 
-Ensure that `pygame-ce` and only `pygame-ce` is installed, not the traditional pygame. If you have the conventional pygame installed, run the following:
+#### Setting up `venv`
 
 ```sh
-pip uninstall pygame
-pip install pygame-ce
+python -m venv venv
+python -m pip install -r dependencies.txt
 ```
-
-If you are using venv, the additional required packages are in the dependencies.txt file.
 
 To run the game, use the Maze executable.
 
