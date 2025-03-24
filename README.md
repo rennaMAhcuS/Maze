@@ -18,10 +18,10 @@ This report outlines the development process of the game "Lost in the Maze: A PY
 2. [Modules](#modules)
 3. [Directory Structure](#directory-structure)
 4. [Running Instructions](#running-instructions)
-   1. [Prerequisites](#prerequisites)
-   2. [Game Navigation and Gameplay](#game-navigation-and-gameplay)
+    1. [Prerequisites](#prerequisites)
+    2. [Game Navigation and Gameplay](#game-navigation-and-gameplay)
 5. [Various Implementations in the Code](#various-implementations-in-the-code)
-   1. [Customizations in the Game](#customizations-in-the-game)
+    1. [Customizations in the Game](#customizations-in-the-game)
 6. [References](#references)
 
 ---
