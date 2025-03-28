@@ -18,10 +18,10 @@ This report outlines the development process of the game "Lost in the Maze: A PY
 2. [Modules](#modules)
 3. [Directory Structure](#directory-structure)
 4. [Running Instructions](#running-instructions)
-    1. [Prerequisites](#prerequisites)
-    2. [Game Navigation and Gameplay](#game-navigation-and-gameplay)
+   1. [Prerequisites](#prerequisites)
+   2. [Game Navigation and Gameplay](#game-navigation-and-gameplay)
 5. [Various Implementations in the Code](#various-implementations-in-the-code)
-    1. [Customizations in the Game](#customizations-in-the-game)
+   1. [Customizations in the Game](#customizations-in-the-game)
 6. [References](#references)
 
 ---
@@ -84,9 +84,12 @@ Note: It is assumed that Python is already installed.
 
 #### Setting up `venv`
 
+If you want to set up a `python` virtual environment for the project, follow the below instructions:
+
 ```sh
 python -m venv venv
-python -m pip install -r dependencies.txt
+source venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
 To run the game, use the Maze executable.
