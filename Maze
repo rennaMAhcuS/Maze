@@ -4,6 +4,11 @@ MAZE_DIR="$(dirname $(realpath "$0"))"
 
 cd "$MAZE_DIR" || exit
 
+# Ensure the data directory is present with the required files
+mkdir -p "$MAZE_DIR/data"
+[ ! -f "$MAZE_DIR/data/LeastTimes.txt" ] && for _ in {1..3}; do echo "100000" >> "$MAZE_DIR/data/LeastTimes.txt"; done
+[ ! -f "$MAZE_DIR/data/path.txt" ] && : > "$MAZE_DIR/data/path.txt"
+
 # Activate the virtual environment
 source "$MAZE_DIR/.venv/bin/activate" || exit
 
